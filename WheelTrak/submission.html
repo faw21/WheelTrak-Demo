@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>WheelTrak</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style_sheet.css">
+
+</head>
+<!-- <body style="background: #f2f2f2">
+ -->
+ <body>
+ <header>
+  <img class="logo hidable" src="img/logo.png" alt="WheelTrak" title="www.pitt.edu">
+  <div class="ex1">
+    <h1><b><i>WheelTrak</i></b></h1>
+  </div>
+
+<!--   <nav style="clear: both;">
+    <button type="button" class="navigation hidable2">Click Me</button>
+    
+  </nav> -->
+</header>
+<!-- <hr class="ex1 hidable2">
+ -->
+ <section class="heading hidable">
+  <nav>
+      <a class="a1" href="index.html"><b>Overview</b></a>
+      <a class="a1" href="detail.html"><b>Project Detail</b></a>
+      <a class="a1" href="people.html"><b>People</b></a>
+      <a class="a1" href="advisory.html"><b>Advisory Panel</b></a>
+      <a class="a1" href="app.html"><b>App</b></a>
+      <a class="a1" href="funding.html"><b>Funding</b></a>
+      <a class="a1" href="register.html"><b>Contact Us</b></a>
+  </nav>
+</section>
+<section class="heading hidable2">
+  <nav>
+      <a class="a2" href="index.html"><b>Overview</b></a>
+      <a class="a2" href="detail.html"><b>Project Detail</b></a>
+      <a class="a2" href="people.html"><b>People</b></a>
+      <a class="a2" href="advisory.html"><b>Advisory Panel</b></a>
+      <a class="a2" href="app.html"><b>App</b></a>
+      <a class="a2" href="funding.html"><b>Funding</b></a>
+      <a class="a2" href="register.html"><b>Contact Us</b></a>
+  </nav>
+</section>
+
+<!-- <hr class="ex1">
+ -->
+<div class="container wrapper">
+  <div class="col-12" style="text-align:  center;">
+    <h2><b>Contact Us</b></h2>
+    <p id="results" class="abstract"></p>
+    <a href="index.html">Return to Home</a>
+    <script>
+      const resultList = document.getElementById('results')
+      let params = new URLSearchParams(window.location.search.substring(1))
+      resultList.append("Thanks " + params.get("name") + "!")
+      resultList.append(document.createElement('br'))
+      resultList.append("We will contact you as soon as possible.")
+      // new URLSearchParams(window.location.search).forEach((value,name) => {
+      //   resultList.append("Thanks ")
+      //   resultList.append(`${name}:${value}`)
+      //   resultList.append(document.createElement('br'))
+      // })
+    </script>
+
+    
+  </div>
+</div>
+<br>
+<footer>
+  <div>
+    <img class="bottom-logo" src="img/pitt-logo-footer_gold.png" alt="footer logo">
+  </div>
+    <div>
+      <p class="address">University of Pittsburgh</p>
+      <p class="address">Department of Rehabilitation Science & Technology</p>
+      <p class="address">6425 Penn Ave Suite 401</p>
+      <p class="address">Pittsburgh, PA 15206</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+

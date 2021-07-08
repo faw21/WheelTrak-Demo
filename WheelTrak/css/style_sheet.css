@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+}
+
+/*#site { overflow-x: hidden; }
+*/
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Segoe UI", Arial, "Lucida Sans", sans-serif;
+}
+
+header {
+  background-color: #003594;
+  color: #ffffff;
+  padding: 20px 40px;
+}
+
+
+h1{
+  color: #FFFFFF;
+  padding-top: 15px;
+}
+h2{
+  color: #003594;
+}
+
+.container{
+  padding: 40px;
+}
+
+a{
+  color: #3366ff;
+}
+section.heading{
+  text-align: center;
+  background-color: #ffb81d;
+}
+/*section nav{
+  display: table-cell;
+  vertical-align: middle;
+}*/
+
+nav a{
+  text-decoration: none;
+}
+nav a.a1{
+  display: inline-block;
+  width: 13%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1vw;
+  font-size: 1.5vmin;
+}
+nav a.a2{
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+nav a:hover{
+  background-color: #FFFFFF;
+}
+
+nav a:focus{
+  background-color: #003594;
+}
+
+
+hr.ex1{
+  height: 20px;
+  border: none;
+  background-color: #ffb81d;
+  padding: 0;
+  margin: 0;
+}
+
+hr.ex2{
+  height: 5px;
+  border: none;
+  background-color: #ffb81d;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.splash{
+  position: relative;
+}
+
+
+
+
+button.navigation{
+  position: absolute;
+  top: 60px;
+  right: 40px;
+}
+
+img.logo{
+  float: left;
+  width: 200px;
+}
+
+img.bottom-logo{
+  width: 300px;
+}
+/*body{
+  background-image: url('wheelchair_background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100%;
+}*/
+html, body {
+    height: 100%;
+}
+
+h3{
+  clear: both;
+}
+
+.wrapper {
+    height:auto !important;
+    min-height:80%;
+}
+
+footer {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  padding: 20px 40px;
+  font-size: 12px;
+  clear: both;
+}
+
+p.address{
+  line-height: 60%;
+}
+
+p.quote{
+  font-family: "Times New Roman", sans-serif;
+  font-size: 30px;
+}
+
+p.abstract{
+  font-size: 25px;
+  font-family: Arial, Calibri, sans-serif;
+  text-align: all;
+}
+.text-block{
+  text-align: center;
+  width: 80%;
+  left: 10%;
+  position: absolute;
+  top: 5%;
+  color: #FFFFFF;
+  background-color: rgba(0, 53, 148, 0.3);
+
+/*  background-color: rgba(255, 200, 30, 0.2);
+*/  ffb81d
+}
+
+div.profile{
+  width: 250px;
+  height: 300px;
+  padding: 10px;
+  float: left;
+  text-align: center;
+}
+
+div.profile_middle{
+  padding: 10px;
+  text-align: center;
+}
+
+div.profile:hover{
+/*  background-color: #000000;
+*/}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.alert{
+  text-align: center;
+  padding: 3px;
+  color: #fff;
+  background: #79c879;
+  font-family: Arial, Calibri, sans-serif;
+  font-size: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .hidable{
+    display: none;
+  }
+
+  .reformat{
+    padding-left: 0;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .hidable2{
+    display: none;
+  }
+
+  div.ex1{
+  padding-left: 240px;
+  }
+}
